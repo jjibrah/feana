@@ -259,12 +259,12 @@ button {
 .login_menu li {
     float: left;
     font-size: 18px;
-    color: #ffffff;
+    color: #1f1919;
     padding-left: 15px;
 }
 
 .login_menu li a {
-    color: #ffffff;
+    color: #e80e0e;
 }
 
 .login_menu li a:hover {
@@ -846,7 +846,7 @@ button {
 }
 
 .mail_section_1 {
-    width: 90%;
+    width: 50%;
     float: left;
 }
 

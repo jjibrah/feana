@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
       <!-- banner section start -->
       <div class="banner_section banner_bg">
          <div class="container-fluid">
@@ -14,7 +13,7 @@
                            <div class="read_bt"><a href="#">Read More</a></div>
                         </div>
                         <div class="taital_right">
-                           <div class="product_img"><img src="images/product-img.png"></div>
+                           <div class="product_img"><img src={% static "images/product-img.png" %} alt=""></div>
                         </div>
                      </div>
                   </div>
@@ -25,7 +24,7 @@
                            <div class="read_bt"><a href="#">Read More</a></div>
                         </div>
                         <div class="taital_right">
-                           <div class="product_img"><img src="images/product-img.png"></div>
+                           <div class="product_img"><img src={% static "images/product-img.png" %} alt=""></div>
                         </div>
                      </div>
                   </div>
@@ -36,7 +35,7 @@
                            <div class="read_bt"><a href="#">Read More</a></div>
                         </div>
                         <div class="taital_right">
-                           <div class="product_img"><img src="images/product-img.png"></div>
+                           <div class="product_img"><img src={% static "images/product-img.png" %} alt=""></div>
                         </div>
                      </div>
                   </div>
@@ -56,14 +55,14 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <div><img src="images/about-img.png" class="about_img"></div>
+                  <div><img src={% static "images/about-img.png" %} class="about_img" alt=""></div>
                </div>
                <div class="col-md-6">
                   <h1 class="about_taital">About company</h1>
                   <div class="border"></div>
                   <p class="about_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationconsectetur adipiscing </p>
                   <div class="read_bt_1"><a href="#">Read More</a></div>
-                  <div class="image_1"><img src="images/img-1.png"></div>
+                  <div class="image_1"><img src={% static "images/img-1.png" %} alt=""></div>
                </div>
             </div>
          </div>
@@ -82,33 +81,32 @@
                <div class="col-md-12">
                   <div class="owl-carousel owl-theme">
                      <div class="item">
-                        <div class="image_main"><img src="images/img-2.png" alt="image" /></div>
+                        <div class="image_main"><img src={% static "images/img-2.png" %} alt="image" /></div>
                         <h6 class="price_text">Price <br><span style="color: #f75261;">$10</span></h6>
                      </div>
                      <div class="item">
-                        <div class="image_main"><img src="images/img-2.png" alt="image" /></div>
+                        <div class="image_main"><img src={% static "images/img-2.png" %} alt="image" /></div>
                         <h6 class="price_text">Price <br><span style="color: #f75261;">$10</span></h6>
                      </div>
                      <div class="item">
-                        <div class="image_main"><img src="images/img-2.png" alt="image" /></div>
+                        <div class="image_main"><img src={% static "images/img-2.png" %} alt="image" /></div>
                         <h6 class="price_text">Price <br><span style="color: #f75261;">$10</span></h6>
                      </div>
                      <div class="item">
-                        <div class="image_main"><img src="images/img-2.png" alt="image" /></div>
+                        <div class="image_main"><img src={% static "images/img-2.png" %} alt="image" /></div>
                         <h6 class="price_text">Price <br><span style="color: #f75261;">$10</span></h6>
                      </div>
                      <div class="item">
-                        <div class="image_main"><img src="images/img-2.png" alt="image" /></div>
+                        <div class="image_main"><img src={% static "images/img-2.png" %} alt="image" /></div>
                         <h6 class="price_text">Price <br><span style="color: #f75261;">$10</span></h6>
                      </div>
                      <div class="item">
-                        <div class="image_main"><img src="images/img-2.png" alt="image" /></div>
+                        <div class="image_main"><img src={% static "images/img-2.png" %} alt="image" /></div>
                         <h6 class="price_text">Price <br><span style="color: #f75261;">$10</span></h6>
                      </div>
                      <div class="item">
-                        <div class="image_main"><img src="images/img-2.png" alt="image" /></div>
-                        <h6 class="price_text">Price <br><span style="color: #f75261;">$10</span></h6>
-                     </div>
+                        <div class="image_main"><img src={% static "images/img-2.png" %} alt="image" /></div>
+                        <h6 class="price_text">Price <br><span style="color: #f75261;">$10</span></h6>          </div>
                   </div>
                </div>
             </div>
@@ -124,7 +122,7 @@
                </div>
                <div class="col-md-9">
                   <div class="client_box">
-                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -135,10 +133,10 @@
                               <p class="client_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                               <div class="client_main">
                                  <div class="client_left">
-                                    <div class="client_img"><img src="images/client-img.png"></div>
+                                    <div class="client_img"><img src={% static "images/client-img.png" %} alt="" alt=""></div>
                                  </div>
                                  <div class="client_right">
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src={% static "images/quick-icon.png" %} alt="" alt=""></div>
                                     <h6 class="client_name">Uliya Hindd</h6>
                                     <p class="aliqua_text">Aliqua. Ut enim</p>
                                  </div>
@@ -148,10 +146,10 @@
                               <p class="client_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                               <div class="client_main">
                                  <div class="client_left">
-                                    <div class="client_img"><img src="images/client-img.png"></div>
+                                    <div class="client_img"><img src={% static "images/client-img.png" %} alt="" alt=""></div>
                                  </div>
                                  <div class="client_right">
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src={% static "images/quick-icon.png" %} alt="" alt=""></div>
                                     <h6 class="client_name">Uliya Hindd</h6>
                                     <p class="aliqua_text">Aliqua. Ut enim</p>
                                  </div>
@@ -161,10 +159,10 @@
                               <p class="client_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                               <div class="client_main">
                                  <div class="client_left">
-                                    <div class="client_img"><img src="images/client-img.png"></div>
+                                    <div class="client_img"><img src={% static "images/client-img.png" %}" alt=""></div>
                                  </div>
                                  <div class="client_right">
-                                    <div class="quick_icon"><img src="images/quick-icon.png"></div>
+                                    <div class="quick_icon"><img src={% static "images/quick-icon.png" %}" alt=""></div>
                                     <h6 class="client_name">Uliya Hindd</h6>
                                     <p class="aliqua_text">Aliqua. Ut enim</p>
                                  </div>
@@ -185,7 +183,7 @@
             <div class="blog_section_2">
                <div class="row">
                   <div class="col-md-5">
-                     <div class="face_img"><img src="images/face-img.png" class="face_img"></div>
+                     <div class="face_img"><img src={% static "images/face-img.png" %} class="face_img" alt=""></div>
                   </div>
                   <div class="col-md-7">
                      <h1 class="face_text">Face Cream Very mosurations</h1>
@@ -202,7 +200,7 @@
                      <div class="readmore_bt"><a href="#">Read More</a></div>
                   </div>
                   <div class="col-md-5">
-                     <div class="face_img"><img src="images/face-img1.png" class="face_img"></div>
+                     <div class="face_img"><img src={% static "images/face-img1.png" %} class="face_img" alt=""></div>
                   </div>
                </div>
             </div>
@@ -216,7 +214,7 @@
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-md-6">
-                     <div class="image_7"><img src="images/img-7.png"></div>
+                     <div class="image_7"><img src={% static "images/img-7.png" %} alt=""></div>
                   </div>
                   <div class="col-md-6">
                      <div class="mail_section_1">
