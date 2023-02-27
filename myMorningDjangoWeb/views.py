@@ -1,5 +1,7 @@
-from django.shortcuts import render
-from .forms import UserRegForm
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm
+from .forms import UserRegistrationForm
 
 
 def home(request):
@@ -24,16 +26,16 @@ def product(request):
 
 # this is a user function
 def register(request):
-    register_button = request.POST.get('m-btn-reg')
-    name = ''
-    email = ''
-    password = ''
+    if request.method == "POST":
+        form = UserRegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Account created successfully')
+            return redirect('my-register')
+        else:
+            messages.success(request, 'Account creation failed')
+            return redirect('my-register')
 
-    form = UserRegForm(request.POST or None)
-    if form.is_valid():
-        name = form.cleaned_data.get('name')
-        email = form.cleaned_data.get('email')
-        password = form.cleaned_data.get('password')
-    context = {'form': form, 'name': name, 'email': email,
-               'password': password, 'register_button': register_button}
-    return render(request, 'register.html', context)
+    else:
+        form = UserRegistrationForm()
+    return render(request, 'register.html', {'form': form})
